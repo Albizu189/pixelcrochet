@@ -1,0 +1,10 @@
+node_modules/
+dist/
+public/pyodide/
+*.local
+.DS_Store
+__pycache__/
+*.pyc
+runs_por_fila.txt
+runs_diagonal_centros.txt
+instrucciones*.txt
