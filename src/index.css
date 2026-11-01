@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #1A4A48;
+  background: #FFEFE9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --bg: #FFEFE9;
+  --surface: #FFF9F6;
+  --surface-strong: #FFFFFF;
+  --text: #1A4A48;
+  --muted: #526E6B;
+  --accent: #E85A3C;
+  --accent-strong: #C94026;
+  --on-accent: #FFF9F6;
+  --pink: #F4A8A8;
+  --orange: #E87A3C;
+  --line: #D8C9C2;
+  --soft: #F8DDD5;
+  --focus: #0B6B66;
+}
+
+:root.dark {
+  --bg: #102E2D;
+  --surface: #173C3A;
+  --surface-strong: #204845;
+  --text: #FFF4EF;
+  --muted: #C7D7D2;
+  --accent: #FF8064;
+  --accent-strong: #FF9A83;
+  --on-accent: #102E2D;
+  --pink: #C98289;
+  --orange: #F09A62;
+  --line: #42635F;
+  --soft: #284B47;
+  --focus: #FFB09C;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; background: var(--bg); }
+body { margin: 0; min-width: 320px; min-height: 100dvh; background: var(--bg); color: var(--text); }
+button, input, select, textarea { font: inherit; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .5; }
+a { color: inherit; }
+img { max-width: 100%; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+::selection { background: var(--pink); color: #1A4A48; }
